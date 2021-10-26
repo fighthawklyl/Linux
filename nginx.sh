@@ -20,7 +20,6 @@ then
     git clone $giturl 
 else
     echo "输入异常选项，脚本即将退出！"
-    sleep(1)
     exit 1
 fi
 
