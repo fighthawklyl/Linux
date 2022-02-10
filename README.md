@@ -15,3 +15,10 @@ wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/fight
 ````bash
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/fighthawklyl/Linux/master/nginx.sh" && chmod 700 /root/nginx.sh && /root/nginx.sh
 ````
+
+````bash
+[php](https://deb.sury.org/)
+sudo curl -JL https://packages.sury.org/php/apt.gpg > /usr/share/keyrings/php-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/php-archive-keyring.gpg] https://packages.sury.org/php $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/php.list > /dev/null
+sudo apt update && sudo apt install -y php8.1 php8.1-curl php8.1-fpm php8.1-mbstring
+````
